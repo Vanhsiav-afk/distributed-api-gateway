@@ -24,3 +24,25 @@ A production-style API Gateway built using **FastAPI**, **Redis**, and **Docker*
 ```bash
 docker compose up --build
 
+Visit:
+
+- [http://localhost:8000/docs](http://localhost:8000/docs) → Swagger UI
+
+---
+
+## 🧪 Endpoints
+
+| Method | Route      | Description                          |
+|--------|------------|--------------------------------------|
+| GET    | `/resource`| Protected endpoint with rate-limit   |
+| GET    | `/health`  | Simple health check                  |
+
+---
+
+## 📈 Features
+
+- IP-based token bucket rate limiter
+- Circuit breaker with automatic reset window
+- Graceful fallback if upstream is down
+- Clean modular code (FastAPI routers + Redis integration)
+- Auto-generated OpenAPI docs
