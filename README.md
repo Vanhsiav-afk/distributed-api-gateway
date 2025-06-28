@@ -18,12 +18,12 @@ A production-style API Gateway built using **FastAPI**, **Redis**, and **Docker*
 - **Docker** + Docker Compose for setup
 
 ---
-
 ## 🚀 Running the Project
 
 ```bash
 docker compose up --build
-
+```  
+---
 Visit:
 
 - [http://localhost:8000/docs](http://localhost:8000/docs) → Swagger UI
